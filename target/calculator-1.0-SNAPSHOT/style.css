@@ -2,24 +2,29 @@
 .cal{
 	padding: 0;
 	border-color: #FF00FF;
-
 	/*border: solid;*/
-	border-color: white; 
-	background: #FF00FF
-
-
+	/*border-color: white; */
+	background: #E5CBDD
 	/*border-color: red;*/
 }
 
+.cal td{
+	font-size: 25px;
+}
+
+.cal td button{
+	font-size: 25px;
+}
+
 .button td{
-	width: 40px;
-	height: 30px;
+	width: 50px;
+	height: 40px;
 	text-align: center;
 	font-weight: 900;
 }
 
 .screen td{
-	height: 30px;
+	height: 40px;
 }
 
 .button button{
@@ -33,5 +38,4 @@ button{
 
 .number button{
 	background: #DB7093;
-
 }
