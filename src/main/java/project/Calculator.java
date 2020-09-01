@@ -6,10 +6,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.rmi.server.ExportException;
 import java.util.regex.Pattern;
 
 
-@WebServlet("/")
+//@WebServlet("/")
 public class Calculator extends HttpServlet {
 
     private Pattern minus = Pattern.compile("\\d+\\s\\u002D\\s\\d+");
@@ -33,6 +34,8 @@ public class Calculator extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+
+
         req.setCharacterEncoding("UTF-8");
         String button = req.getParameter("button");
 
@@ -49,6 +52,11 @@ public class Calculator extends HttpServlet {
 
                 numbers = numbers.replace(",", ".");
                 String[] s = numbers.split("\\s");
+
+                if (s.length > 3){
+                    throw new IOException();
+                }
+
                 double numOne = Double.parseDouble(s[0]);
                 double numTwo = Double.parseDouble(s[2]);
                 double result = getResultArithmetic(numOne, numTwo);
@@ -56,17 +64,15 @@ public class Calculator extends HttpServlet {
                 numbers = numbers.replace(".", ",");
                 break;
 
-
             default:
-
                 numbers += button;
-
         }
-
 
 
         req.setAttribute("myText", numbers);
         req.getRequestDispatcher("calculator.jsp").forward(req, resp);
+
+
     }
 
     private double getResultArithmetic(double numOne, double numTwo ) {
