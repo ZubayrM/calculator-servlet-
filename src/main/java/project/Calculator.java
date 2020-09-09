@@ -1,12 +1,9 @@
 package project;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
-import java.rmi.server.ExportException;
 import java.util.regex.Pattern;
 
 
@@ -33,9 +30,6 @@ public class Calculator extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-
-
         req.setCharacterEncoding("UTF-8");
         String button = req.getParameter("button");
 
@@ -54,6 +48,7 @@ public class Calculator extends HttpServlet {
                 String[] s = numbers.split("\\s");
 
                 if (s.length > 3){
+                    System.out.println("примеры");
                     throw new IOException();
                 }
 
@@ -72,6 +67,18 @@ public class Calculator extends HttpServlet {
         req.setAttribute("myText", numbers);
         req.getRequestDispatcher("calculator.jsp").forward(req, resp);
 
+//        Integer count = 0;
+//        HttpSession session = req.getSession();
+//        count = (Integer) session.getAttribute("count");
+//        count = count == null ? 0 : count;
+//
+//        session.setAttribute("count", ++count);
+//
+//        if (count > 15){
+//            throw new CountException();
+//        } else {
+//            session.setAttribute("count", ++count);
+//        }
 
     }
 

@@ -7,12 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a584ebc7-8592-4f02-b397-1e8654186c43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/CountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/CountFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/TimeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/errorCount.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/calculator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calculator.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT/WEB-INF/classes/project/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT/WEB-INF/classes/project/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT/calculator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/calculator-1.0-SNAPSHOT/calculator.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/Calculator.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,18 +60,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Диплом/DevPut" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\javaProgram\servle\calculator\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\javaProgram\servle\calculator\src\main\webapp" />
       <recent name="D:\javaProgram\servle\calculator\src\main" />
       <recent name="D:\javaProgram\servle\calculator\src\main\java\project" />
       <recent name="D:\javaProgram\servle\calculator" />
       <recent name="D:\javaProgram\servle\calculator\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaProgram\servle\calculator\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -168,7 +175,10 @@
       <workItem from="1598802986190" duration="13370000" />
       <workItem from="1598895880964" duration="2459000" />
       <workItem from="1598899340917" duration="2878000" />
-      <workItem from="1598983597062" duration="5843000" />
+      <workItem from="1598983597062" duration="8405000" />
+      <workItem from="1599062127725" duration="3634000" />
+      <workItem from="1599238048315" duration="5269000" />
+      <workItem from="1599664674146" duration="5326000" />
     </task>
     <task id="LOCAL-00001" summary="31/08/2020">
       <created>1598900329801</created>
@@ -177,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598900329802</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added exception">
+      <created>1598990322797</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598990322797</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,14 +215,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="31/08/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="31/08/2020" />
+    <MESSAGE value="added exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="added exception" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/project/Calculator.java</url>
-          <line>41</line>
+          <line>35</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -7,7 +7,7 @@
         <%@ include file="style.css" %>
     </style>
 
-    <h1>${count}</h1>
+<%--    <h1>${count}</h1>--%>
 
     <title>calculator</title>
 </head>
