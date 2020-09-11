@@ -4,8 +4,9 @@
 	border-color: #FF00FF;
 	/*border: solid;*/
 	/*border-color: white; */
-	background: lightslategrey;
+	background: #304644;
 	/*border-color: red;*/
+    color: #9E9199;
 }
 
 .cal td{
@@ -33,9 +34,11 @@
 }
 
 button{
-	background: #FFC0CB;
+	background: #81A38F;
+    color: #E7E2E4;
 }
 
 .number button{
-	background: #DB7093;
+	background: #4F6A59;
+    color: #C6BDC2;
 }

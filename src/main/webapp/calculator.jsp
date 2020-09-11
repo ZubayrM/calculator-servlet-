@@ -16,7 +16,7 @@
 <form action="/calculator_war/" method="post">
     <table class="cal" border="0">
         <tr class="screen">
-            <td colspan = "4"><input type="text" name="text" disabled="true" value="${myText}" style="height: 40px; font-size: 25px; width: 100%; text-align: right;" ></td>
+            <td colspan = "4"><input type="text" name="text" disabled="true" value="${myText}" style="height: 40px; font-size: 25px; width: 100%; text-align: right; background-color: #C6BDC2; " ></td>
         </tr>
         <tr class="button">
             <td>java</td>
